@@ -57,6 +57,24 @@ int main() {
 
     printf("Digite o nome dos pontos turisticos 2: \n");
     scanf("%d", &pontosTuristicos2);
+
+    printf("Carta 1: \n");
+    printf("Estado: %c \n", estado1);
+    print("Codigo: %s \n" , codigoCarta1);
+    printf("Nome da cidade: %s \n", nomeCidade1);
+    printf("Populaçao: %d \n", populaçao1);
+    printf("Area: %f \n", area1);
+    printf("Pib: %f \n", pib1 );
+    printf("Numero de pontos turisticos: %d \n", pontosTuristicos1);
+
+    printf("Carta 2: \n");
+    printf("Estado: %c \n", estado2);
+    print("Codigo: %s \n" , codigoCarta2);
+    printf("Nome da cidade: %s \n", nomeCidade2);
+    printf("Populaçao: %d \n", populaçao2);
+    printf("Area: %f \n", area2);
+    printf("Pib: %f \n", pib2 );
+    printf("Numero de pontos turisticos: %d \n", pontosTuristicos2);
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
