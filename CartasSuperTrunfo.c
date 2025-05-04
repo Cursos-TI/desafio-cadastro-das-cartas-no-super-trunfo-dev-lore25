@@ -17,6 +17,7 @@ int main() {
     int pontosTuristicos1,pontosTuristicos2;
     float densidade1, densidade2;
     float pibPerCapita1, pibPerCapita2;
+    float superPoder1, superPoder2;
 
     printf("Digite o Estado da Carta 1: \n");
     scanf ("%c", &estado1);
@@ -66,6 +67,9 @@ int main() {
     pibPerCapita1 = pib1/populacao1;
     pibPerCapita2 = pib2/populacao2;
 
+    superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 - densidade1;
+    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 - densidade2;
+
     printf("Carta 1: \n");
     printf("Estado: %c \n", estado1);
     printf("Codigo: %s \n" , codigoCarta1);
@@ -87,6 +91,49 @@ int main() {
     printf("Número de Pontos Turísticos: %d \n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km² \n", densidade2);
     printf("PIB per Capita: %.2f reais \n", pibPerCapita2);
+
+    printf("Comparação de Cartas: \n");
+    if(populacao1 > populacao2){
+        printf("Populaçao: Carta 1 venceu (1) \n");
+    } else{
+        printf("Populaçao: Carta 2 venceu (0) \n");  
+    }
+    
+    if(area1 > area2){
+        printf("Área: Carta 1 venceu (1) \n");
+    } else{
+        printf("Área: Carta 2 venceu (0) \n");  
+    }
+
+    if(pib1 > pib2){
+        printf("PIB: Carta 1 venceu (1) \n");
+    } else{
+        printf("PIB: Carta 2 venceu (0) \n");  
+    }
+
+    if(pontosTuristicos1 > pontosTuristicos2){
+        printf("Pontos Turísticos: Carta 1 venceu (1) \n");
+    } else{
+        printf("Pontos Turísticos: Carta 2 venceu (0) \n");  
+    }
+
+    if(pibPerCapita1 > pibPerCapita2){
+        printf("PIB per Capita: Carta 1 venceu (1) \n");
+    } else{
+        printf("PIB per Capita: Carta 2 venceu (0) \n");  
+    }
+
+    if((-densidade1)>(-densidade2)){
+        printf("Densidade Populacional: Carta 1 venceu (1) \n");
+    } else{
+        printf("Densidade Populacional: Carta 2 venceu (0) \n");  
+    }
+
+    if(superPoder1 > superPoder2){
+        printf("Super Poder: Carta 1 venceu (1) \n");
+    } else{
+        printf("Super Poder: Carta 2 venceu (0) \n");  
+    }
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
